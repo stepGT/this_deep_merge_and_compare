@@ -1,0 +1,18 @@
+{
+  "name": "deep_merge_and_deep_compare",
+  "version": "1.0.0",
+  "description": "Deep merge && deep compare",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+  },
+  "author": "stepGT",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

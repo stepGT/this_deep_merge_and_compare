@@ -17,4 +17,16 @@ describe('Deep Compare test', () => {
   it('4. Expects one null not to be equal object', () => {
     expect(deepCompare(null, {})).to.equal(false);
   });
+
+  it('5. Expects array is not to be equal object', () => {
+    expect(deepCompare([], {})).to.equal(false);
+  });
+
+  it('6. Expects different length of arrays is to be equal', () => {
+    expect(deepCompare([1, 2, 3, 4], [1, 2, 3])).to.equal(false);
+  });
+
+  it('7. Expects different size of objects is to be equal', () => {
+    expect(deepCompare({ a: 1, b: 2 }, { a: 1, c: 2, g: 3 })).to.equal(false);
+  });
 });
